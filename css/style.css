@@ -14,10 +14,10 @@ body{
 .container{
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 2fr 1fr;
     grid-template-areas: 
-    "nav nav nav"
+    "header header header"
     "call call call"
     "aside main main"
     "footer footer footer"
@@ -29,9 +29,10 @@ body{
     text-align: center;
 }
 
-nav{
+header{
+    display: flex;
     background-color: #d4d4d4;
-    grid-area: nav;
+    grid-area: header;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
@@ -65,31 +66,3 @@ footer{
     padding-top: var(--main-padding);
 }
 
-.menu{
-    display: flex;
-    align-items: center;
-}
-
-.logo{
-    display: flex;
-}
-
-.menu-itens{
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-.menu-items li {
-    display: inline;
-    margin-left: 15px;
-}/* 
-.menu-items li:first-child {
-    margin-left: 0;
-} 
-*/
