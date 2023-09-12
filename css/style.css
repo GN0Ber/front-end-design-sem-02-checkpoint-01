@@ -26,6 +26,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font: 1em;
     color: #000000;
+    text-align: center
 }
 
 header{
@@ -47,6 +48,7 @@ header{
     grid-area: call;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    font-style: italic
 }
 
 main{
@@ -54,6 +56,7 @@ main{
     grid-area: main;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    text-align: center;
 }
 
 aside{
@@ -62,6 +65,7 @@ aside{
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
 }
+aside p{text-align: justify}
 
 footer{
     background-color: #d4d4d4;
@@ -85,7 +89,9 @@ nav{
     grid-area: nav;
     border-radius: var(--main-radius);
     margin: var(--main-padding);
-    padding: var(--main-padding);
+    padding-top: var(--main-padding);
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .itens{
